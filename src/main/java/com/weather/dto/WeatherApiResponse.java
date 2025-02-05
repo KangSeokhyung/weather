@@ -31,7 +31,13 @@ public class WeatherApiResponse {
         private int numOfRows;
         private int pageNo;
         private int totalCount;
-        private List<WeatherItem> items;
+        private Items items;
+    }
+
+    @Getter
+    @Setter
+    public static class Items {
+        private List<WeatherItem> item;
     }
 
     @Getter
